@@ -11,6 +11,7 @@
 	<link href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css" rel="stylesheet">
 	<!-- plugin -->
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
 	<!-- styleSheet's -->
 	<link rel="stylesheet" href="css/default-edit.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -27,29 +28,93 @@
 
 		<!-- offcanvas-start -->
 		<div class="offcanvas-menu">
-			<ul class="offmenu" id="menuParent">
-				<a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-				<li class="active"><a href="#">HOME</a></li>
-				<li><a href="#">ABOUT US</a></li>
-				<li class="dropdown">
-					<a href="#" data-bs-toggle="collapse" data-bs-target='#drop-menu1'>OUR HORSES</a>
-					<div class="dropdown-menu-custom collapse" id="drop-menu1" data-bs-parent="#menuParent">
-						<ul>
-							<li><a href="#">YEARLINGS</a></li>
-							<li><a href="#">2 YEAR OLDS</a></li>
-							<li><a href="#">3 YEAR OLD PLUS</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="#">LATEST NEWS</a></li>
-				<li><a href="#">CONTACT & FIND US</a></li>
-			</ul>
+			<div class="container">
+				<div class="offcanvas-menu-inner">
+					<!-- mobile-menu -->
+					<ul class="mobile-menu">
+						<li class="active">
+							<a href="#hero-section">
+								<div class="icon">
+									<iconify-icon icon="ri:home-5-line"></iconify-icon>
+								</div>
+								<span class="txt">Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="#skills-section">
+								<div class="icon">
+									<iconify-icon icon="ri:trophy-line"></iconify-icon>
+								</div>
+								<span class="txt">Skills</span>
+							</a>
+						</li>
+						<li>
+							<a href="#qua-section">
+								<div class="icon">
+									<iconify-icon icon="ri:book-open-line"></iconify-icon>
+								</div>
+								<span class="txt">Qualification</span>
+							</a>
+						</li>
+						<li>
+							<a href="#service-section">
+								<div class="icon">
+									<iconify-icon icon="ri:briefcase-line"></iconify-icon>
+								</div>
+								<span class="txt">Services</span>
+							</a>
+						</li>
+						<li>
+							<a href="#project-section">
+								<div class="icon">
+									<iconify-icon icon="ri:image-line"></iconify-icon>
+								</div>
+								<span class="txt">Projects</span>
+							</a>
+						</li>
+						<li>
+							<a href="#contact-section">
+								<div class="icon">
+									<iconify-icon icon="ri:chat-3-line"></iconify-icon>
+								</div>
+								<span class="txt">Contact</span>
+							</a>
+						</li>
+					</ul>
+					<!-- mobile-menu-end -->
+					<a href="javascript:void(0)" class="offcanvas-close">
+						<iconify-icon icon="ri:close-line"></iconify-icon>
+					</a>
+				</div>
+			</div>
 		</div>
 		<div class="offcanvas-overlay"></div>
 		<!-- offcanvas-start-end -->
 
+
+		<!-- mobile-bar -->
+		<div class="mobile-bar d-lg-none">
+			<div class="container">
+				<div class="mobile-bar-inner">
+					<a href="index.html" class="mobile-bar-logo">
+						Bachirou
+					</a>
+					<div class="mobile-bar-right">
+						<a href="javascript:void(0)" class="page-theme-button">
+							<iconify-icon class="day" icon="ri:moon-line"></iconify-icon>
+							<iconify-icon class="night" icon="ri:sun-line"></iconify-icon>
+						</a>
+						<a href="javascript:void(0)" class="offcanvas-open">
+							<iconify-icon icon="ri:menu-4-fill"></iconify-icon>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- mobile-bar-end -->
+
 		<!-- header-section -->
-		<header class="header-section" id="sticky-header">
+		<header class="header-section d-lg-block d-none" id="sticky-header">
 			<div class="header-in">
 				<div class="container">
 					<div class="header-section-inner">
@@ -61,26 +126,26 @@
 							<div class="main-menu">
 								<ul>
 									<li>
-										<a class="active" href="#">Home</a>
+										<a class="active" href="#hero-section">Home</a>
 									</li>
 									<li>
-										<a href="#">Skills</a>
+										<a href="#skills-section">Skills</a>
 									</li>
 									<li>
-										<a href="#">Qualification</a>
+										<a href="#qua-section">Qualification</a>
 									</li>
 									<li>
-										<a href="#">Services</a>
+										<a href="#service-section">Services</a>
 									</li>
 									<li>
-										<a href="#">Projects</a>
+										<a href="#project-section">Projects</a>
 									</li>
 									<li>
-										<a href="#">Contct</a>
+										<a href="#contact-section">Contact</a>
 									</li>
 								</ul>
 							</div>
-							<a href="#" class="page-theme-button">
+							<a href="javascript:void(0)" class="page-theme-button">
 								<iconify-icon class="day" icon="ri:moon-line"></iconify-icon>
 								<iconify-icon class="night" icon="ri:sun-line"></iconify-icon>
 							</a>
@@ -93,11 +158,11 @@
 		<!-- main -->
 		<main>
 			<!-- hero-section -->
-			<section class="hero-section">
+			<section class="hero-section" id="hero-section">
 				<div class="container">
 					<div class="hero-section-inner">
 						<div class="hero-content">
-							<div class="hero-rr1">
+							<div class="hero-rr1" data-aos="fade-down" data-aos-duration="3000">
 								<h1 class="h1">Hi, I’m Bachirou
 									<br>
 									PowerBI Platform
@@ -105,7 +170,7 @@
 									Developer</h1>
 							</div>
 							<div class="hero-rr2">
-								<div class="hero-content-ts hero-content-left">
+								<div class="hero-content-ts hero-content-left"  data-aos="fade-up" data-aos-duration="3000">
 									<div class="hero-txt-cont-wrap">
 										<div class="hero-txt-cont-g">
 											<h4>BIOGRAPHY</h4>
@@ -128,10 +193,14 @@
 										</div>
 									</div>
 								</div>	
-								<div class="hero-content-image">
+								<div class="hero-content-image" data-aos="fade-down" data-aos-duration="3000">
 									<div class="image-frame">
-										<img src="images/shape-wawes.svg" alt="" class="shape shape1">
-										<img src="images/shape-circle.svg" alt="" class="shape shape2">
+										<!-- normal-shape -->
+										<img src="images/shape-wawes.svg" alt="" class="n-sec-shape shape shape1">
+										<img src="images/shape-circle.svg" alt="" class="n-sec-shape shape shape2">
+										<!-- dark-shape -->
+										<img src="images/shape-wawes-dark.svg" alt="" class="d-sec-shape shape shape1">
+										<img src="images/shape-circle-dark.svg" alt="" class="d-sec-shape shape shape2">
 										<div class="image">
 											<img src="images/hero-person.png" alt="">
 										</div>
@@ -142,7 +211,7 @@
 										<li><a href="#"><iconify-icon icon="ri:dribbble-line"></iconify-icon></a></li>
 									</ul>
 								</div>
-								<div class="hero-content-ts hero-content-right">
+								<div class="hero-content-ts hero-content-right"  data-aos="fade-up" data-aos-duration="3000">
 									<div class="hero-text-cont-wrap">
 										<div class="hero-txt-cont-g">
 											<h4>YEARS OF EXPERIENCE</h4>
@@ -166,7 +235,7 @@
 
 
 			<!-- skills-section -->
-			<section class="skills-section">
+			<section class="skills-section" id="skills-section">
 				<div class="container">
 					<div class="skills-section-inner section-underline">
 						<div class="skill-sec-title sec-cont-blk center-this">
@@ -175,7 +244,7 @@
 						</div>
 
 						<div class="skills-content-wrapper">
-							<div class="skills-wrapper-column">
+							<div class="skills-wrapper-column" data-aos="fade-right" data-aos-duration="3000">
 								<div class="swc-title">
 									<h3>
 										<iconify-icon class="icon" icon="ri:braces-line"></iconify-icon>
@@ -240,7 +309,7 @@
 								</div>
 							</div>
 
-							<div class="skills-wrapper-column">
+							<div class="skills-wrapper-column" data-aos="fade-left" data-aos-duration="3000">
 								<div class="swc-title">
 									<h3>
 										<iconify-icon class="icon" icon="ri:pantone-line"></iconify-icon>
@@ -303,8 +372,9 @@
 
 
 			<!-- qualification-section -->
-			<section class="qua-section">
-				<img src="images/qua-shape1.svg" alt="" class="qua-shape qua-shape1">
+			<section class="qua-section" id="qua-section">
+				<img src="images/qua-shape1.svg" alt="" class="n-sec-shape qua-shape qua-shape1">
+				<img src="images/qua-shape1-dark.svg" alt="" class="d-sec-shape ua-shape qua-shape1">
 				<div class="container">
 					<div class="qua-section-inner section-underline">
 						<div class="qua-sec-title sec-cont-blk center-this">
@@ -313,7 +383,7 @@
 						</div>
 
 						<div class="qua-content-wrapper">
-							<div class="qua-wrapper-column">
+							<div class="qua-wrapper-column"  data-aos="fade-down" data-aos-duration="3000">
 								<div class="qua-c-title">
 									<h3>
 										<iconify-icon class="icon" icon="ri:pencil-ruler-2-line"></iconify-icon>
@@ -345,7 +415,7 @@
 								</div>
 							</div>
 
-							<div class="qua-wrapper-column">
+							<div class="qua-wrapper-column"  data-aos="fade-down" data-aos-duration="3000">
 								<div class="qua-c-title">
 									<h3>
 										<iconify-icon class="icon" icon="ri:building-line"></iconify-icon>
@@ -384,7 +454,7 @@
 
 
 			<!-- services-section -->
-			<section class="service-section">
+			<section class="service-section" id="service-section">
 				<div class="container">
 					<div class="services-section-inner section-underline">
 						<div class="services-sec-title sec-cont-blk center-this">
@@ -394,7 +464,7 @@
 
 						<div class="services-wrapper-row">
 							<!-- service-single -->
-							<div class="service-single">
+							<div class="service-single" data-aos="fade-down" data-aos-duration="2500">
 								<div class="icon">
 									<iconify-icon icon="ri:layout-4-line"></iconify-icon>
 								</div>
@@ -405,7 +475,7 @@
 							</div>
 							<!-- service-single-end -->
 							<!-- service-single -->
-							<div class="service-single">
+							<div class="service-single" data-aos="fade-down" data-aos-duration="2850" data-aos-delay="300">
 								<div class="icon">
 									<iconify-icon icon="ri:code-s-fill"></iconify-icon>
 								</div>
@@ -416,7 +486,7 @@
 							</div>
 							<!-- service-single-end -->
 							<!-- service-single -->
-							<div class="service-single">
+							<div class="service-single" data-aos="fade-down" data-aos-duration="3000">
 								<div class="icon">
 									<iconify-icon icon="ri:quill-pen-line"></iconify-icon>
 								</div>
@@ -434,7 +504,7 @@
 
 
 			<!-- projects-section -->
-			<section class="project-section">
+			<section class="project-section" id="project-section">
 				<div class="container">
 					<div class="project-section-inner section-underline">
 						<div class="project-sec-title sec-cont-blk center-this">
@@ -442,7 +512,7 @@
 							<h4 class="h4 mb-0">Most recent work</h4>
 						</div>
 
-						<div class="project-slider project-slider-active owl-carousel slider-arrow1 slider-arrow-center slider-dots1">
+						<div class="project-slider project-slider-active owl-carousel slider-arrow1 slider-arrow-center slider-dots1" data-aos="fade-down" data-aos-duration="3000">
 							<div class="project-slide">
 								<div class="image">
 									<img src="images/project1.png" alt="">
@@ -530,7 +600,8 @@
 
 			<!-- testimonial-section -->
 			<section class="testimonial-section">
-				<img src="images/testimonial-shape1.svg" alt="" class="testimonial-shape1">
+				<img src="images/testimonial-shape1.svg" alt="" class="n-sec-shape testimonial-shape1">
+				<img src="images/testimonial-shape1-dark.svg" alt="" class="d-sec-shape testimonial-shape1">
 				<div class="container">
 					<div class="testimonial-section-inner section-underline">
 						<div class="testimonial-sec-title sec-cont-blk center-this">
@@ -538,7 +609,7 @@
 							<h4 class="h4 mb-0">My client saying</h4>
 						</div>
 
-						<div class="testimonial-slider testimonial-slider-active slider-arrow1 owl-carousel">
+						<div class="testimonial-slider testimonial-slider-active slider-arrow1 owl-carousel" data-aos="fade-down" data-aos-duration="3000">
 							<div class="testimonial-slide">
 								<h3>“Working with Chris is to give a good impression, I carry out my project at a good cost, with excellent quality and attention. Great service and recommended.”</h3>
 								<div class="t-meta">
@@ -568,7 +639,7 @@
 
 
 			<!-- contact-section -->
-			<section class="contact-section">
+			<section class="contact-section" id="contact-section">
 				<div class="container">
 					<div class="contact-section-inner section-underline">
 						<div class="contact-sec-title sec-cont-blk center-this">
@@ -577,7 +648,7 @@
 						</div>
 
 						<div class="contact-content-wrapper">
-							<div class="contact-content-column contact-content-text-column">
+							<div class="contact-content-column contact-content-text-column" data-aos="fade-right" data-aos-duration="3000">
 								<div class="cc-column-title">
 									<h3>
 										<iconify-icon class="icon" icon="ri:chat-3-line"></iconify-icon>
@@ -608,7 +679,7 @@
 								</div>
 							</div>
 
-							<div class="contact-content-column contact-form-column">
+							<div class="contact-content-column contact-form-column" data-aos="fade-left" data-aos-duration="3000">
 								<div class="cc-column-title ps-0">
 									<h3 class="justify-content-center">
 										<iconify-icon class="icon" icon="ri:send-plane-line"></iconify-icon>
@@ -657,7 +728,7 @@
 		<footer class="footer-section">
 			<div class="container">
 				<div class="footer-section-inner">
-					<div class="footer-content">
+					<div class="footer-content"  data-aos="fade-down" data-aos-duration="3000">
 						<a href="index.html" class="footer-logo">
 							<span class="txt">Bachirou</span>
 							<span class="sm-txt">BI Developer</span>
@@ -692,6 +763,8 @@
 	<!-- plugin -->
 	<script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/one-page-nav-min.js"></script>
 	<!-- custom-js -->
 	<script src="js/main.js"></script>
 	<!-- End All Js -->

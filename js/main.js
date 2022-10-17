@@ -4,14 +4,17 @@
   // offcanvas-js
   $('.offcanvas-open').click(function() {
     $('.offcanvas-menu').addClass('active');
+    $('body').addClass('offcanvas-opened');
     $('.offcanvas-overlay').addClass('active');
   });
   $('.offcanvas-menu a').click(function() {
     $('.offcanvas-menu').removeClass('active');
+    $('body').removeClass('offcanvas-opened');
     $('.offcanvas-overlay').removeClass('active');
   });
   $('.close-offcanvas').click(function() {
     $('.offcanvas-menu').removeClass('active');
+    $('body').removeClass('offcanvas-opened');
     $('.offcanvas-overlay').removeClass('active');
   });
   $(document).mouseup(function(e){
@@ -20,6 +23,7 @@
     // If the target of the click isn't the container
     if(!container.is(e.target) && container.has(e.target).length === 0){
       $('.offcanvas-menu').removeClass('active');
+      $('body').removeClass('offcanvas-opened');
       $('.offcanvas-overlay').removeClass('active');
     }
   });
@@ -58,7 +62,7 @@
             items:1,
             nav:true
         },
-        767:{
+        991:{
             items:2,
             nav:true,
         }
@@ -97,6 +101,27 @@
 
 
 $(document).ready(function(){
+
+  // page-theme 
+  $('.page-theme-button').click(function(){
+    $('body').toggleClass('page-dark');
+  })
+
+
+  // one-page-nav
+  $('.mobile-menu').onePageNav({
+    currentClass: 'active',
+    scrollOffset: 0,
+    scrollSpeed: 750,
+    scrollThreshold: 0.5,
+    filter: '',
+    easing: 'swing',
+  });
+
+
+
+  //aos init
+  AOS.init();
 
   // scroll up
   $(function(){

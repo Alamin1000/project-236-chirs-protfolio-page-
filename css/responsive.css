@@ -6,22 +6,338 @@
 
 
 @media (max-width: 1199px) {
- 
+    .services-wrapper-row {
+        --inner-space: 40px;
+    }
+
+
+    .testimonial-slider {
+        padding: 0 140px;
+    }
 }
 
 
 @media (max-width: 991px) {
- 
+
+    .hero-content-image {
+        width: 250px;
+    }
+    .hero-content-image .image-frame {
+        padding: 15px;
+    }
+    .hero-content-image .image-frame .shape1 {
+        width: 60px;
+        top: 103px;
+        left: -31px;
+    }
+    .hero-content-image .image-frame .shape2 {
+        width: 200px;
+        bottom: -60px;
+        right: -85px;
+    }
+    .hero-rr1 .h1 {
+        font-size: 35px;
+    }
+    .hero-section-inner {
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--text-color);
+    }
+    .hero-txt-cont-g h4 {
+        margin: 0 0 15px;
+    }
+    .hero-txt-cont-g {
+        margin: 0 0 42px;
+    }
+    .hero-content-ts {
+        padding: 0px 0 0;
+    }
+    .hero-share-links {
+        margin: 22px 0 0;
+    }
+    .hero-rr1 {
+        margin: 0 0 40px;
+    }
+    .hero-section {
+        padding: 70px 0 0;
+    }
+
+
+    .skills-section-inner {
+        padding: 75px 0px 50px;
+    }
+
+
+    .qua-content-wrapper {
+        padding-left: 0px;
+    }
+    .skill-sec-title {
+        margin: 0 0 45px;
+    }
+
+
+    .qua-section-inner {
+        padding: 60px 0;
+    }
+    .qua-shape1 {
+        width: 140px;
+    }
+    .qua-sec-title {
+        margin: 0 0 50px;
+    }
+
+    
+    .services-wrapper-row {
+        --inner-space: 20px;
+        --item: 3;
+        padding: 0;
+    }
+    .service-single h3 {
+        font-size: 20px;
+        margin: 0 0 20px;
+    }
+    body {
+        font-size: 15px;
+    }
+    .service-single {
+        --hov-off: 6px;
+    }
+    .services-section-inner {
+        padding: 60px 0 60px;
+    }
+    .services-sec-title {
+        margin: 0 0 42px;
+    }
+
+
+    .project-section-inner {
+        padding: 80px 0 60px;
+    }
+    .project-sec-title {
+        margin: 0 0 55px;
+    }
+    .project-slider .owl-dots {
+        margin: 45px 0 0;
+    }
+
+
+    .testimonial-section-inner {
+        padding: 70px 0 40px;
+    }
+    .testimonial-slider .owl-nav {
+        width: 120px;
+        margin: 25px auto 0;
+    }
+    .testimonial-sec-title {
+        margin: 0 0 60px;
+    }
+    .testimonial-shape1 {
+        width: 100px;
+    }
+    .testimonial-slider {
+        padding: 0 0px;
+    }
+
+
+    .contact-content-wrapper {
+        padding: 0;
+    }
+    .contact-section-inner {
+        padding: 80px 0 60px;
+    }
+    .contact-sec-title {
+        margin: 0 0 50px;
+    }
+
+
+    .footer-menu li a {
+        padding: 10px 19px;
+        font-size: 15px;
+    }
+    .footer-logo {
+        margin: 0 0 25px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .footer-logo .sm-txt {
+        margin: 8px 0 0;
+        font-size: 15px;
+    }
+    .f-social li {
+        margin-right: 24px;
+    }
+    .f-social {
+        margin: 0 0 60px;
+    }
+    .footer-menu {
+        margin: 0 0 27px;
+    }
+
+    #scrollUp {
+        bottom: 80px;
+    }
+    .offcanvas-opened #scrollUp {
+        display: none;
+    }
 }
 
 
 @media (max-width: 768px) {
- 
+    .hero-rr1 .h1 {
+        font-size: 24px;
+    }
+    .hero-rr2 {
+        flex-wrap: wrap;
+    }
+    .hero-content-image {
+        order: -1;
+        margin: 0 auto 20px;
+    }
+    .hero-rr2 .hero-content-ts {
+        margin: 35px 0 0;
+        width: 100%;
+        flex-grow: 1;
+    }
+    .hero-content-right {
+        text-align: left;
+    }
+    .hero-txt-cont-g h3 {
+        font-size: 24px;
+    }
+    .hero-txt-cont-g {
+        margin: 0 0 35px;
+    }
+
+    .skills-content-wrapper {
+        flex-wrap: wrap;
+    }
+    .skills-wrapper-column {
+        margin-bottom: 60px;
+        width: 100%;
+    }
+    .skills-wrapper-column:last-child {
+        margin-bottom: 0;
+    }
+    .skill-i-snl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h2 {
+        font-size: 24px;
+        margin: 0 0 11px;
+    }
+    .h4 {
+        font-size: 13px;
+    }
+    .swc-row {
+        --inner-space: 12px;
+        --bt-space: 30px;
+    }
+
+
+    .qua-content-wrapper {
+        flex-wrap: wrap;
+    }
+    .qua-wrapper-column {
+        width: 100%;
+        margin: 0 0 45px;
+    }
+    .qua-wrapper-column:last-child {
+        margin-bottom: 0;
+    }
+    .qua-c-title {
+        margin: 0 0 27px;
+        padding-left: 0px;
+    }
+    .qua-c-title h3 {
+        justify-content: center;
+    }
+    .qua-c-sng h3 {
+        font-size: 15px;
+        margin: 0 0 15px;
+    }
+    .qua-c-sng p {
+        font-size: 12px;
+    }
+    .qua-c-sng {
+        margin-bottom: 30px;
+    }
+    .qua-shape1 {
+        transform: rotate(180deg);
+        left: initial;
+        right: -20px;
+        bottom: 250px;
+    }
+
+
+    .services-wrapper-row {
+        --inner-space: 40px;
+        --item: 1;
+        padding: 0;
+    }
+    .service-single {
+        --in-radius: 122px;
+        padding: 60px 40px;
+    }
+
+
+    .project-slider {
+        --arrow-off: 0px !important;
+        padding: 0 40px;
+    }
+    .slider-arrow1 .owl-nav button {
+        font-size: 35px !important;
+    }
+    .testimonial-slider {
+        padding: 0 20px;
+    }
+    .testimonial-slide h3 {
+        font-size: 15px;
+        margin: 0 0 30px;
+    }
+    .testimonial-sec-title {
+        margin: 0 0 42px;
+    }
+    .testimonial-shape1 {
+        width: 90px;
+        right: -30px;
+        top: 90px;
+    }
+
+
+    .contact-content-wrapper {
+        flex-wrap: wrap;
+    }
+    .contact-form-column {
+        margin-top: 60px;
+        width: 100%;
+        flex-shrink: 0;
+    }
+    .contact-cont-g {
+        margin: 0 0 38px;
+    }
+    .cc-column-title {
+        padding-left: 0px;
+    }
+    .cc-column-title h3 {
+        justify-content: center;
+    }
+    .submit-button-x {
+        font-size: 20px;
+    }
+    .submit-button-x .icon {
+        font-size: 24px;
+        margin: 0 0 0 7px;
+    }
+    .single-input-x {
+        width: 100%;
+        margin: 0px 0 40px;
+    }
 }
 
 
 @media (max-width: 575px) {
- 
+
 }
 
 

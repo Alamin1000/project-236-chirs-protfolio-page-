@@ -244,11 +244,14 @@
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    background: #fff;
+    background: var(--background);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
     font-weight: 300;
     color: var(--text-color);
     font-family: "Font Awesome 5 Pro";
     font-size: 13px;
     line-height: 1;
+}
+.page-dark #scrollUp::before {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.089);
 }

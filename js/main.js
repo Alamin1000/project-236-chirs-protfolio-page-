@@ -107,8 +107,15 @@ $(document).ready(function(){
     $('body').toggleClass('page-dark');
   })
 
-
-  // one-page-nav
+  //one-page-nav
+  $('.main-menu ul').onePageNav({
+    currentClass: 'active',
+    scrollOffset: 0,
+    scrollSpeed: 750,
+    scrollThreshold: 0.5,
+    filter: '',
+    easing: 'swing',
+  });
   $('.mobile-menu').onePageNav({
     currentClass: 'active',
     scrollOffset: 0,
